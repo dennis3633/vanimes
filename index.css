@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-image {
+    background-image: url('https://hostel.jkuat.ac.ke/assets/images/forms_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 36px;
+  }
+  
+  h1 a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  h1 a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .background-image:hover .hover-text {
+    opacity: 1;
+  }
+  
+  .rectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .background-image:hover .rectangle {
+    opacity: 1;
+  }
+  
